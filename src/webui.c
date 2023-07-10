@@ -2840,7 +2840,7 @@ static bool _webui_browser_exist(_webui_window_t* win, size_t browser) {
 
             // Firefox on Linux
 
-            if(_webui_cmd_sync(win, "firefox -v", false) == 0) {
+            if(_webui_cmd_sync(win, "firefox -v --width=800 --height=600", false) == 0) {
 
                 sprintf(win->browser_path, "firefox");
                 FirefoxExist = true;
